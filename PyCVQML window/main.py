@@ -32,12 +32,8 @@ class table(QObject):
 ########## memanggil class table di mainloop######################
 #----------------------------------------------------------------#    
 if __name__ == "__main__":
-    
-    app = QtGui.QGuiApplication(sys.argv)
     PyCVQML.registerTypes()
-    view = QtQuick.QQuickView()
-    view.setTitle("PyCVQML")
-    view.show()
     main = table()
-    
+    sys.exit(self.app.exec_())
 #----------------------------------------------------------------#
+
